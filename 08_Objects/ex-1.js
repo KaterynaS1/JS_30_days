@@ -19,6 +19,7 @@ console.log(dog.bark())
 
 /* Set new properties the dog object: breed, getDogInfo */
 dog.breed = 3;
-dog.getDogInfo = function(name, legs, age){
-
+dog.getDogInfo = function(){
+return `the name of the dog is ${this.name}, the dog has ${this.legs} legs, the dog is ${this.color}`;
 }
+console.log(dog.getDogInfo());
